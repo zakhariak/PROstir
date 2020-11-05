@@ -108,7 +108,8 @@ body {
   margin-right: auto;
   height: 100%;
   border: 1px solid #000;
-  overflow: hidden;
+  // overflow: hidden;
+  position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -139,4 +140,5 @@ table {
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: none;
 }
