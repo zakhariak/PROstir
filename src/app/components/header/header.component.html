@@ -1,13 +1,13 @@
-<div class="header__container">
+<div class="header__container" id="header">
     <div class="header__container_titleBlock">
         <div class="contacts_block">
             <div class="contacts">
-                <p class="contacts_mobile">+380630000000</p>
-                <p class="contacts_address">Львів, вул. Сластіона,3</p>
+                <a href="tel:+380630000000" class="contacts_mobile">+380630000000</a>
+                <a href="https://goo.gl/maps/ApMGUpVrsQzBvb83A" class="contacts_address">Львів, вул. Сластіона,3</a>
             </div>
         </div>
         <div class="name_block">
-            <a href="" class="name">
+            <a [routerLink]="[ '/home' ]" class="name">
                 <h3>PROSTIR</h3>
                 <p>dance studio</p>
             </a>
@@ -16,20 +16,20 @@
             <div class="callMe">
                 <input type="button" value="Передзвоніть мені">
             </div>
+            <p>{{ width }}</p>
         </div>
     </div>
     <div class="header__container_nav">
         <ul class="header__container_nav_list">
-            <li><a href="">Головна</a></li>
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Команда</a></li>
-            <li><a href="">Галерея</a></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Контакти</a></li>
+            <li><a [routerLink]="[ '/home' ]" routerLinkActive="active">Головна</a></li>
+            <li><a [routerLink]="[ '/about' ]" routerLinkActive="active">Про нас</a></li>
+            <li><a [routerLink]="[ '/team' ]" routerLinkActive="active">Команда</a></li>
+            <li><a [routerLink]="[ '/gallery' ]" routerLinkActive="active">Галерея</a></li>
+            <li><a [routerLink]="[ '/blog' ]" routerLinkActive="active">Блог</a></li>
+            <li><a [routerLink]="[ '/contacts' ]" routerLinkActive="active">Контакти</a></li>
         </ul>
     </div>
-    <div class="video">
+    <div *ngIf="height" class="video">
         <video class="backgroundVideo" src="../../../assets/video/video.mp4" autoplay [muted]="'muted'" loop></video>
     </div>
-    
 </div>

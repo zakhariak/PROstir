@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<div class="footer__container">
+    <div class="footer__container_left">
+        <div class="name">
+            <a [routerLink]="[ '/home' ]" class="name">
+                <h3>PROSTIR</h3>
+                <p>dance studio</p>
+            </a>
+        </div>
+        <div class="social">
+            <h3 class="social_title">Соціальні мережі</h3>
+            <div class="social_block">
+                <div class="facebook"></div>
+                <div class="instagram"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container_right">
+        <div class="nav">
+            <h3 class="nav_title">Меню</h3>
+            <div class="nav_block">
+                <a [routerLink]="[ '/about' ]" routerLinkActive="active">Про нас</a>
+                <a [routerLink]="[ '/team' ]" routerLinkActive="active">Команда</a>
+                <a [routerLink]="[ '/gallery' ]" routerLinkActive="active">Галерея</a>
+                <a [routerLink]="[ '/blog' ]" routerLinkActive="active">Блог</a>
+            </div>
+        </div>
+        <div class="contacts">
+            <h3 class="contacts_title">Контакти</h3>
+            <div class="contacts_block">
+                <a href="tel:+380970000000">097 000 00 00</a>
+                <a href="tel:+30630000000">063 000 00 00</a>
+                <a>м.Львів,<br>вул.Сластіона, 3</a>
+            </div>
+        </div>
+    </div>
+</div>

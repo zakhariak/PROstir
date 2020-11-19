@@ -103,12 +103,12 @@ section {
 
 body {
   line-height: 1;
-  max-width: 1900px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
+  min-height: 100vh;
   border: 1px solid #000;
-  // overflow: hidden;
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
